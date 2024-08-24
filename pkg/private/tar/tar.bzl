@@ -304,7 +304,7 @@ builds were accidentally doing it. Never explicitly set this to true for new cod
         # Implicit dependencies.
         "_build_tar": attr.label(
             default = Label("//pkg/private/tar:build_tar"),
-            cfg = "exec",
+            # cfg = "exec",
             executable = True,
             allow_files = True,
         ),
